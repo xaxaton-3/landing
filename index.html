@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Red Hot OSU Peppers</title>
+    <title>Red Hot ОГУ Peppers</title>
 
     <script
       defer
@@ -35,7 +35,6 @@
       .content-block {
         padding: 20px;
         border-radius: 10px;
-        margin: 15px;
       }
       .content-block img {
         width: 100%;
@@ -46,6 +45,14 @@
         font-size: 16px;
         margin-top: 10px;
         color: #e36c09;
+      }
+      hr {
+        height: 6px;
+        background-color: #707070;
+      }
+      .avatar {
+        object-fit: cover;
+        height: 350px;
       }
     </style>
   </head>
@@ -61,11 +68,73 @@
           />
         </div>
         <div class="col-8">
-          <p style="font-size: 32px">Red Hot OSU Peppers</p>
+          <p style="font-size: 32px">Red Hot ОГУ Peppers</p>
         </div>
       </div>
 
-      <hr style="height: 6px; background-color: #707070" />
+      <hr />
+
+      <div
+        id="carouselExample"
+        class="carousel slide"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./serega.png"
+              class="d-block w-100 avatar"
+            />
+            <p>Венюков Сергей (Cap, Front)</p>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="zhenya.png"
+              class="d-block w-100 avatar"
+            />
+            <p>Перов Евгений (Back)</p>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./ilya.png"
+              class="d-block w-100 avatar"
+            />
+            <p>Федоров Илья (Design, Analyst)</p>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./tasher.png"
+              class="d-block w-100 avatar"
+            />
+            <p>Георг Леонид (Back)</p>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <hr />
 
       <figure class="text-center">
         <blockquote class="blockquote">
@@ -78,32 +147,50 @@
         <figcaption class="blockquote-footer">Перцы</figcaption>
       </figure>
 
-      <hr style="height: 6px; background-color: #707070" />
+      <hr />
 
       <h1>Память Героям | 17.02.2025</h1>
 
       <div class="content-block">
-        <img
-          src="image1.jpg"
-          alt="Изображение 1"
-        />
-        <p>Описание первого блока</p>
+        <img src="./map.jpg" />
+        <p>
+          Интерактивная электронная карта с распределением по 42 муниципальным образованиям на карте
+          Оренбургской области с возможностью фильтрации по вооруженным конфликтам.
+        </p>
       </div>
 
       <div class="content-block">
         <img
-          src="image2.jpg"
-          alt="Изображение 2"
+          src="./book.png"
+          style="margin-bottom: 10px"
         />
-        <p>Описание второго блока</p>
+        <img src="./book-2.png" />
+        <p>
+          Интерактивная электронная книга с информацией о погибших с возможностью фильтрации по
+          вооруженным конфликтам. Книга стилизована под бумажный вариант и перелистывается, как
+          настоящая.
+        </p>
+      </div>
+
+      <div class="content-block">
+        <img src="./form.png" />
+        <p>
+          Форма для подачи заявки на внесение информации о погибшем герое. Незарегистрированный
+          пользователь может указать email, на который после обработки заявки (принятия или
+          отклонения) придет соответствующее уведомление.
+        </p>
       </div>
 
       <div class="content-block">
         <img
-          src="image3.jpg"
-          alt="Изображение 3"
+          src="./ai-1.png"
+          style="margin-bottom: 10px"
         />
-        <p>Описание третьего блока</p>
+        <img src="./ai-2.png" />
+        <p>
+          Пользователь может провести обработку текста с помощью искусственного интеллекта:
+          исправить грамматические и пунктуационные ошибку, улучшить логическую связь содержимого.
+        </p>
       </div>
     </div>
   </body>
